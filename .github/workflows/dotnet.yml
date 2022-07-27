@@ -24,3 +24,8 @@ jobs:
         ./sbom-tool generate -b ./buildOutput -bc . -pn Test -pv 1.0.0 -nsb https://sbom.mycompany.com -V Verbose
         ls ./buildOutput/_manifest/spdx_2.2/
         cat ./buildOutput/_manifest/spdx_2.2/manifest.spdx.json
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        path: buildOutput

@@ -66,8 +66,6 @@ jobs:
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
 
-    - name: Analyze
-      uses: github/codeql-action/analyze@v2
       
 
     # ℹ️ Command-line programs to run using the OS shell.
